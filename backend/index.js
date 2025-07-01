@@ -18,6 +18,6 @@ mongoose.connect(process.env.url, {
 app.use('/api/auth', authRoutes); // POST to /api/auth
 
 // Start Server
-app.listen(3000, () => {
+app.listen(3000||process.env.port, () => {
     console.log("Server started on http://localhost:3000");
 });
